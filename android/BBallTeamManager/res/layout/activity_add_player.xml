@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name" >
+
+        <requestFocus />
+    </EditText>
+    
+   <EditText
+        android:id="@+id/lastName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name" >
+    </EditText>
+    
+   <EditText
+        android:id="@+id/middleName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/middle_name" >
+    </EditText>
+    
+   <Spinner
+        android:id="@+id/position"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/positions"
+        android:prompt="@string/position_prompt">
+   </Spinner>
+    
+   <EditText
+        android:id="@+id/parentName1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/parent_name1" >
+    </EditText>
+    
+   <EditText
+        android:id="@+id/parentPhone1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/parent_phone1" >
+    </EditText>
+    
+   <EditText
+        android:id="@+id/parentEmail1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/parent_email1" >
+    </EditText>
+    
+   <EditText
+        android:id="@+id/parentName2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/parent_name2" >
+    </EditText>
+    
+   <EditText
+        android:id="@+id/parentPhone2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/parent_phone2" >
+    </EditText>
+    
+   <EditText
+        android:id="@+id/parentEmail2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/parent_email2" >
+    </EditText>
+   
+   <EditText
+        android:id="@+id/jersey"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/jersey" >
+    </EditText>
+    
+   <Spinner
+        android:id="@+id/team"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+   </Spinner>
+   
+   <Button
+        android:id="@+id/addPlayerButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/save" 
+        android:onClick="savePlayer" />
+
+</LinearLayout>

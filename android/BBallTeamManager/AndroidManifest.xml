@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beardy.bballteammanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.beardy.bballteammanager.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beardy.bballteammanager.CreateTeamActivity"
+            android:label="@string/title_activity_create_team"
+            android:parentActivityName="com.beardy.bballteammanager.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.beardy.bballteammanager.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.beardy.bballteammanager.PlayerListActivity"
+            android:label="@string/title_player_list"
+            android:parentActivityName="com.beardy.bballteammanager.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.beardy.bballteammanager.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.beardy.bballteammanager.PlayerDetailActivity"
+            android:label="@string/title_player_detail"
+            android:parentActivityName=".PlayerListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlayerListActivity" />
+        </activity>
+        <activity android:name="com.beardy.bballteammanager.AddPlayerActivity" android:label="@string/title_activity_add_player">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlayerListActivity" />
+        </activity>
+    </application>
+
+</manifest>
